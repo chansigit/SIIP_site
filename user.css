@@ -118,3 +118,13 @@ section {
 	margin-right: 25px;
 	margin-top: 15px;
 }
+
+
+.body_text_bold {
+    font-family: calibri;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    color: #232323;
+}

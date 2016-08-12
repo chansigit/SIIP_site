@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="http://user2016.github.io/images/useR-middle.png">
+    
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta charset="UTF-8">
 
     <title>Symposium on Intelligent Information Processing 2016, Beijing</title>
     <!-- for social media preview stuff -->
-    <link href="images/useR-large.png" rel="image_src">
-    <meta content="The annual useR! international R User conference is the main meeting of the R user and developer community. In 2016, the conference will be held at the campus of Stanford University, Stanford, CA."
+    
+    <meta content="The SIIP 2016 will be held at the campus of Tsinghua University, Beijing, China."
           name="description">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
@@ -45,6 +45,13 @@
             color: #333;
         }
     </style>
+    <!--引用百度地图API-->
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 
 <body data-offset="50" data-spy="scroll" data-target=".sidebar">
@@ -63,13 +70,16 @@
         <div class="container">
             <div class="row">
                 <div class="span3 sidebar">
+                    <!--可隐藏框 Latest News -->
                     <div id="logodiv">
                         <img alt="logo" src="images/logo_608x300.png"><br>
                         <br>
                         <!-- Social Network 
                         <a href="https://weibo.com/XXXXXX" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @user_stanford</a>
                         -->
+                        <!--
                         <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                        -->
                         <br><br>
                     </div>
 
@@ -80,7 +90,7 @@
                                 <li class="nav-header">Conference</li>
                                 <!--
                                 <li>
-                                    <a class="no-section" href="https://www.flickr.com/groups/user2016">
+                                    <a class="no-section" href="https://xxxxxxxxx">
                                       <i class="icon-hand-right"></i>
                                       Conference Pictures
                                     </a>
@@ -89,7 +99,7 @@
 
                                 <!--
                                 <li>
-                                    <a class="no-section" href="https://channel9.msdn.com/Events/useR-international-R-User-conference/useR2016">
+                                    <a class="no-section" href="https://xxxxxxxxxx">
                                       <i class="icon-hand-right"></i>
                                       Searchable Video Archive
                                     </a>
@@ -171,12 +181,7 @@
                                 <!--   </li> -->
                                 <!-- </ul> -->
 
-                                <li>
-                                    <a href="#social">
-                                        <i class="icon-music"></i>
-                                        Social Program
-                                    </a>
-                                </li>
+
 
 
                                 <li class="divider"></li>
@@ -187,7 +192,7 @@
                                 </li>
                                 <li>
                                     <a href="#location">
-                                        <i class="icon-map-marker"></i> Location, Facility, Accessibility
+                                        <i class="icon-map-marker"></i> location
                                     </a>
                                 </li>
                                 <!--<li>
@@ -223,23 +228,10 @@
                                         Diversity Scholarships (closed)
                                     </a>
                                 </li>-->
-                                <li>
-                                    <a class="no-section" href="#asa-grant">
-                                        <i class="icon-info-sign"></i>
-                                        ASA Grants
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#satellite">
-                                        <i class="icon-bookmark"></i>
-                                        Bioconductor
-                                        Conference
-                                    </a>
-                                </li>
+
                                 <li>
                                     <a href="#behavioR">
-                                        <i class="icon-info-sign"></i> Code of
-                                        Conduct
+                                        <i class="icon-info-sign"></i> Code of Conduct
                                     </a>
                                 </li>
                                 <li>
@@ -248,7 +240,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <i class="icon-question-sign"></i>Questions? See <a href="faq.html" style="display: inline;" class="no-section">FAQ</a> or email <code>user2016-help</code>AT<code>stat.stanford.edu</code>
+                                    <i class="icon-question-sign"></i>Questions? See <a href="faq.html" style="display: inline;" class="no-section">FAQ</a> or email <code>joanzhang</code>AT<code>tsinghua.edu.cn</code>
                                 </li>
 
                             </ul>
@@ -259,16 +251,18 @@
                 <div class="span9 content">
 
                     <div class="accordion" id="accordion2">
-                        <!--可隐藏框 Latest News -->
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Latest News                                 |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="latest" style="display: inline;">
-                                <!--可隐藏框 title-->
+                                <!-- title -->
                                 <div class="accordion-heading accordion-opened">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
                                         <h3 class="accordion-h1">Latest News</h3>
                                     </a>
                                 </div>
-                                <!--可隐藏框 context-->
+                                <!-- context-->
                                 <div id="collapseOne" class="accordion-body collapse in">
                                     <div class="accordion-inner">
                                         <div class="media">
@@ -313,348 +307,131 @@
                                 </div>
                             </section>
                         </div>
-
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: About the Conference                        |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="about" style="display: inline;">
+                                <!-- title -->
                                 <div class="accordion-heading accordion-opened">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
                                         <h3 class="accordion-h1">About the Conference</h3>
                                     </a>
                                 </div>
+                                <!-- context -->
                                 <div id="collapseTwo" class="accordion-body collapse in">
                                     <div class="accordion-inner">
                                         <p>
-                                            The annual <a href="http://www.r-project.org/conferences.html">useR!</a>
-                                            conference is the main meeting of the international <a href="http://www.r-project.org/">R</a> user and
-                                            developer community. Its program consists of both
-                                            invited and user-contributed presentations.
+                                            SIIP 2016 will take place in beautiful Beijing from 
+                                            on October 15-16, 2016. The conference aims at blah
+                                            blah blah and procedding blah blah blah. As usual, 
+                                            authors of accepted papers will be invited to submit 
+                                            an edited verison of the manuscripot to the Journal
+                                            of blah blah blah for the publication of a special 
+                                            issue.
+
                                         </p>
                                         <ul>
                                             <li>
-                                                The invited keynote lectures cover a broad
-                                                spectrum of topics ranging from technical and
-                                                R-related computing issues to general statistical
-                                                topics of current interest.
+                                                DETAILED INFO: Lorem ipsum dolor sit amet, 
+                                                consectetur adipisicing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna aliqua. 
                                             </li>
                                             <li>
-                                                The user-contributed presentations and
-                                                posters are submitted as abstracts prior
-                                                to the conference and may be related to
-                                                (virtually) any R-related topic. The
-                                                presentations are typically organized in
-                                                sessions of either broad or special
-                                                interest, which also comprise a "free"
-                                                discussion format. Such a discussion
-                                                format not only provides a forum for
-                                                software demonstrations and detailed
-                                                discussions but also supports the
-                                                self-organization of the respective
-                                                communities. The duration is between 15 or
-                                                20 minutes for the focus and kaleidoscope
-                                                sessions, and 5 minutes for lightning
-                                                talks.
+                                                DETAILED INFO: Ut enim ad minim veniam, quis 
+                                                nostrud exercitation ullamco laboris nisi ut 
+                                                aliquip ex ea commodo consequat. Duis aute irure
+                                                dolor in reprehenderit in voluptate velit esse 
+                                                cillum dolore eu fugiat nulla pariatur. Excepteur 
+                                                sint occaecat cupidatat non proident, sunt in culpa 
+                                                qui officia deserunt mollit anim id est laborum.
                                             </li>
                                         </ul>
+
                                         <p>
                                             This year the conference will be held at the campus
-                                            of <a href="http://www.stanford.edu/">Stanford University</a> in Stanford, CA. The
+                                            of <a href="http://www.tsinghua.edu.cn/">Tsinghua University</a> in Beijing, China. The
                                             conference is being organized with support from the
-                                            <a href="https://statistics.stanford.edu/">
-                                                Department
-                                                of Statistics, Stanford University
-                                            </a> and the
-                                            <a href="https://library.stanford.edu">Stanford Libraries</a>.
+                                            <a href="https://www.au.tsinghua.edu.cn/">
+                                                Department of Automation, Tsinghua University
+                                            </a> 
                                         </p>
                                         <p>
                                             The program will cover topics such as
                                             <ul>
-                                                <li>History of R and computing with data</li>
-                                                <li>Bayesian Statistics</li>
-                                                <li>Bioinformatics</li>
-                                                <li>Economics, Finance and Insurance</li>
-                                                <li>
-                                                    High Performance
-                                                    Computing
-                                                </li>
-                                                <li>Reproducible Research</li>
-                                                <li>Industrial Applications</li>
-                                                <li>Statistical Learning with Big Data</li>
-                                                <li>Spatial Statistics</li>
-                                                <li>Teaching</li>
-                                                <li>Visualization & Graphics</li>
-                                                <li>and many more.</li>
+                                                <li>智能信息处理的新理论与新方法</li>
+                                                <li>智能信息处理与大数据的结合</li>
+                                                <li>智能信息处理在医疗健康等领域的应用</li>
                                             </ul>
                                         </p>
                                         <p>
-                                            The year 2016 will be special in at least two ways: it marks the 40th anniversary of the S language (the language underlying R), and is also the year that John Chambers, an inventor of S, turns 75. Holding the conference at Stanford, the epicenter of Silicon Valley, is especially timely given the prominent position of R in the rapidly expanding fields of big data and data science.
+                                            Lorem ipsum dolor sit amet, 
+                                            consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua.
                                         </p>
 
                                         <h2>Organizing committee</h2>
                                         <ul>
                                             <li>
-                                                <a href="http://statweb.stanford.edu/~jmc4/">
-                                                    John Chambers
-                                                </a>, Stanford University
+                                                <a href="http://bioinfo.au.tsinghua.edu.cn/member/xzhang/XZhang_English.html">
+                                                    Xuegong Zhang
+                                                </a>, Tsinghua University
                                             </li>
                                             <li>
-                                                <a href="http://www.stat.berkeley.edu/~sandrine/">
-                                                    Sandrine
-                                                    Dudoit
-                                                </a>, University of California, Berkeley
+                                                <a href="http://bioinfo.au.tsinghua.edu.cn/member/jgu/">
+                                                    Jin Gu
+                                                </a>, Tsinghua University
                                             </li>
-                                            <li>
-                                                <a href="https://statistics.stanford.edu/people/trevor-j-hastie">
-                                                    Trevor Hastie
-                                                </a>, Stanford University
-                                            </li>
-                                            <li>
-                                                <a href="https://statistics.stanford.edu/people/susan-holmes">
-                                                    Susan Holmes
-                                                </a>, Stanford University
-                                            </li>
-                                            <li>
-                                                <a href="https://politicalscience.stanford.edu/people/simon-d-jackman">
-                                                    Simon Jackman
-                                                </a>, Stanford University
-                                            </li>
-                                            <li><a href="http://www.olivialau.org/">Olivia Lau</a>, Google Inc.</li>
-                                            <li>Nicholas Lewin-Koh, Genentech Inc.</li>
-                                            <li>
-                                                <a href="http://faculty.engineering.ucdavis.edu/matloff/">
-                                                    Norman
-                                                    Matloff
-                                                </a>,
-                                                University of
-                                                California, Davis
-                                            </li>
-                                            <li>
-                                                <a href="https://statistics.stanford.edu/people/jacqueline-meulman">
-                                                    Jacqueline Meulman
-                                                </a>, Stanford University
-                                            </li>
-                                            <li>
-                                                <a href="https://statistics.stanford.edu/people/balasubramanian-narasimhan">
-                                                    Balasubramanian
-                                                    Narasimhan
-                                                </a> (Chair), Stanford University
-                                            </li>
-                                            <li>
-                                                <a href="http://karthik.io/">Karthik Ram</a>,
-                                                University of California, Berkeley
-                                            </li>
-                                            <li>Joseph Rickert, Microsoft Corp.</li>
-                                            <li>
-                                                <a href="http://www.stat.ucdavis.edu/~duncan/">
-                                                    Duncan
-                                                    Temple Lang
-                                                </a>,
-                                                University of California, Davis
-                                            </li>
+                                            
                                         </ul>
-                                        <h2>Program committee</h2>
-                                        <ul>
-                                            <li>
-                                                <a href="http://www.stat.ubc.ca/~jenny/">
-                                                    Jenny
-                                                    Bryan
-                                                </a>, University of British Columbia
-                                            </li>
-                                            <li>
-                                                <a href="https://dicook.github.io/">
-                                                    Dianne
-                                                    Cook
-                                                </a>, Monash University
-                                            </li>
-                                            <li>
-                                                <a href="http://www.cbs.dk/en/research/departments-and-centres/department-of-finance/staff/pdmes">
-                                                    Peter
-                                                    Dalgaard
-                                                </a>,
-                                                Copenhagen Business School
-                                            </li>
-                                            <li>
-                                                <a href="http://dirk.eddelbuettel.com/">
-                                                    Dirk
-                                                    Eddelbuettel
-                                                </a>, Ketchum Trading
-                                            </li>
-                                            <li>
-                                                <a href="https://statistics.stanford.edu/people/susan-holmes">
-                                                    Susan
-                                                    Holmes
-                                                </a>, Stanford University
-                                            </li>
-                                            <li>
-                                                <a href="http://user.math.uzh.ch/hothorn/">
-                                                    Torsten
-                                                    Hothorn
-                                                </a>, University of Zurich
-                                            </li>
-                                            <li>
-                                                <a href="http://juliejosse.com/">
-                                                    Julie
-                                                    Josse
-                                                </a> (Chair), Agrocampus Ouest Rennes
-                                            </li>
-                                            <li>
-                                                <a href="http://scholar.harvard.edu/mair/home">
-                                                    Patrick
-                                                    Mair
-                                                </a>, Harvard University
-                                            </li>
-                                            <li>
-                                                <a href="https://jeroenooms.github.io/">
-                                                    Jeroen
-                                                    Ooms
-                                                </a>, University of California, Los Angeles
-                                            </li>
-                                            <li>
-                                                <a href="https://hilaryparker.com/about-hilary-parker/">
-                                                    Hilary
-                                                    Parker
-                                                </a>, Stitch Fix
-                                            </li>
-                                            <li>
-                                                <a href="http://www.stat.washington.edu/hana/">
-                                                    Hana
-                                                    &#352;ev&#269;&#237;kov&#225;
-                                                </a>, University of Washington, Seattle
-                                            </li>
-                                            <li>
-                                                <a href="http://people.math.aau.dk/~tvede/">
-                                                    Torben
-                                                    Tvedebrink
-                                                </a>, Aalborg University
-                                            </li>
-                                            <li>
-                                                <a href="http://www.heatherturner.net/">
-                                                    Heather
-                                                    Turner
-                                                </a>, University of Warwick
-                                            </li>
-                                        </ul>
+
                                     </div>
                                 </div>
                             </section>
                         </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Sponsors                                    |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="sponsors" style="display: inline;">
+                                <!-- title -->
                                 <div class="accordion-heading accordion-opened">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
                                         <h3 class="accordion-h1">Sponsors</h3>
                                     </a>
                                 </div>
+                                <!-- context -->
                                 <div id="collapseThree" class="accordion-body collapse in">
                                     <div class="accordion-inner">
-                                        <h2>Platinum</h2>
-                                        <a href="http://www.moore.org"><img src="images/sponsor_logos/moore-foundation-logo.png" style="margin: 10px; height:60px;"></a>
-                                        <a href="http://www.rstudio.com"><img src="images/sponsor_logos/RStudio-Logo-Blue-Gradient.png" style="margin: 10px; height:80px;"></a>
-                                        <a href="http://h2o.ai"><img src="images/sponsor_logos/h2o-ai-logo-plain.jpg" style="margin: 10px; height:140px;"></a>
-                                        <a href="http://www.google.com"><img src="images/sponsor_logos/googlelogo_color_272x92dp.png" style="margin: 10px; height:60px;"></a>
-                                        <a href="https://www.r-consortium.org">
-                                            <img src="images/sponsor_logos/rconsort_logo_ws.png"
-                                                 style="margin: 10px; height:110px;">
-                                        </a>
-                                        <a href="https://www.ebay.com">
-                                            <img src="images/sponsor_logos/ebay_tm_rgb_rev_673x520_300_RGB.jpg"
-                                                 style="margin: 10px; height:120px;">
-                                        </a>
-                                        <a href="https://www.rentec.com">
-                                            <img src="images/sponsor_logos/rentec.png"
-                                                 style="margin: 10px; height:75px;">
-                                        </a>
-                                        <a href="https://www.datacamp.com">
-                                            <img src="images/sponsor_logos/data-camp.png"
-                                                 style="margin: 10px; height:130px;">
-                                        </a>
-                                        <a href="https://www.bwater.com">
-                                            <img src="images/sponsor_logos/Bridgewater_Associates.png"
-                                                 style="margin: 10px; height:180px;">
-                                        </a>
-                                        <h3>Gold</h3>
-                                        <a href="http://www.oracle.com"><img src="images/sponsor_logos/o-redbadge-digital-master.png" style="margin: 10px; height:120px;"></a>
-                                        <a href="http://www.microsoft.com"><img src="images/sponsor_logos/Microsoft-logo_rgb_c-gray.png" style="margin: 10px; height:120px;"></a>
-                                        <a href="https://med.stanford.edu/bdsi.html"><img src="images/sponsor_logos/bdsi.png" style="margin: 10px; height:60px;"></a>
-                                        <h4>Silver</h4>
-                                        <a href="https://www.twosigma.com/">
-                                            <img src="images/sponsor_logos/TwoSigma.Stack.2color.jpg"
-                                                 style="margin: 10px; height:120px;">
-                                        </a>
-                                        <a href="https://www.alteryx.com/">
-                                            <img src="images/sponsor_logos/alteryx-392-297-color.gif"
-                                                 style="margin: 10px; height:80px;">
-                                        </a>
-                                        <a href="https://www.teradata.com/">
-                                            <img src="images/sponsor_logos/TER_4C_NOTAG.jpg"
-                                                 style="margin: 10px; height:95px;">
-                                        </a>
-                                        <a href="https://www.ea.com/">
-                                            <img src="images/sponsor_logos/EA_logo.png"
-                                                 style="margin: 10px; height:60px;">
-                                        </a>
-                                        <h4>Bronze</h4>
-                                        <a href="https://statistics.stanford.edu">
-                                            <img src="images/sponsor_logos/stat.png"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
-
-                                        <a href="https://library.stanford.edu">
-                                            <img src="images/sponsor_logos/sul.png"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
-
-					<a href="https://www.theupsstore.com">
-                                            <img src="images/sponsor_logos/ups.jpg"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
-                                        <a href="https://www.dominodatalab.com">
-                                            <img src="images/sponsor_logos/domino.png"
-                                                 style="margin: 10px; height:60px;">
-                                        </a>
-                                        <a href="https://nycdatascience.com/">
-                                            <img src="images/sponsor_logos/Supstat_NYCDSA.png"
-                                                 style="margin: 10px; height:60px;">
-                                        </a>
-                                        <h4>Publishers</h4>
-                                        <a href="https://www.sagepub.com">
-                                            <img src="images/sponsor_logos/sage.png"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
-                                        <a href="https://www.cambridge.org">
-                                            <img src="images/sponsor_logos/Cambridge50.png"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
-                                        <a href="https://www.wiley.com">
-                                            <img src="images/sponsor_logos/wiley50.png"
-                                                 style="margin: 10px; height:30px;">
-                                        </a>
-                                        <a href="https://www.springer.com">
-                                            <img src="images/sponsor_logos/Springer50.png"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
-
-					<h4>Other</h4>
-                                        <a href="https://www.amstat.org">
-                                            <img src="images/sponsor_logos/ASA-newlogo.png"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
-                                        <a href="https://www.medtronic.com">
-                                            <img src="images/sponsor_logos/Medtronic.png"
-                                                 style="margin: 10px; height:20px;">
-                                        </a>
-                                        <a href="https://www.att.com">
-                                            <img src="images/sponsor_logos/att.jpg"
-                                                 style="margin: 10px; height:60px;">
-                                        </a>
-                                        <h4>Media</h4>
-                                        <a href="http://www.r-bloggers.com">
-                                            <img src="images/sponsor_logos/RBloggers.png"
-                                                 style="margin: 10px; height:35px;">
-                                        </a>
+                                    <table cellpadding="0" cellspacing="15" border="0" width="95%">
+                                        <tbody>
+                                        <tr>
+                                            <td align="left" valign="top" width="25%">
+                                                <img src="images/sponsor_logos/tsinghua_logo.png" alt="Tsinghua University" height="40" width="120">
+                                            </td>
+                                            <td align="left" valign="middle" width="81%">Tsinghua University 
+                                                <br>
+                                                <a href="http://www.tsinghua.edu.cn/publish/then/index.html" target="_blank">http://www.tsinghua.edu.cn/publish/then/index.html</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top">
+                                                <img src="images/sponsor_logos/tnlist_logo.jpg" alt="TNList" height="40" width="120">
+                                            </td>
+                                            <td class="body_text" align="left" valign="middle">Tsinghua National Laboratory for Information Science and Technology
+                                                <br>
+                                                <a href="http://www.tnlist.org.cn/pages/english.jsp" target="_blank">http://www.tnlist.org.cn/pages/english.jsp</a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                     </div>
                                 </div>
                             </section>
                         </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Important Dates                             |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="dates" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -691,20 +468,7 @@
                                                         2016
                                                     </td>
                                                 </tr>
-                                                <tr>
-                                                    <td>ASA Grant Application Deadline</td>
-                                                    <td>
-                                                        <strike>
-                                                            March
-                                                            25
-                                                        </strike> April 4, 2016
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Diversity Scholarship Application Deadline</td>
-                                                    <td>March 25, 2016</td>
-                                                </tr>
+                                                
                                                 <tr>
                                                     <td>Notification of Acceptance</td>
                                                     <td>
@@ -714,6 +478,7 @@
                                                         </strike> April 6, 2016
                                                     </td>
                                                 </tr>
+
                                                 <tr>
                                                     <td>
                                                         Early
@@ -763,12 +528,15 @@
                                         </table>
                                         <p>
                                             <a id="reg-note"><sup>**</sup></a>
-                                            Conference is full!
+                                            Conference is full now!
                                         </p>
                                     </div>
                                 </div>
                             </section>
                         </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Registration                                |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="registration" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -778,6 +546,7 @@
                                 </div>
                                 <div id="collapseFive" class="accordion-body collapse in">
                                     <div class="accordion-inner">
+                                        <!--
                                         <p style="font-weight: bold">
                                             <em>
                                                 Due to overwhelming
@@ -805,6 +574,17 @@
                                             and thank you for your
                                             understanding.
                                         </p>
+                                        -->
+                                        <p style="font-weight: bold; font-size: 19px">How To Register?</p>
+                                        <p>
+                                            You are kindly requested to make registration via our online e-mail. 
+                                            Please fill in the <a href="attachment/registration_form.docx">registration form</a> and send it to 
+                                            <code>registration@xxx.edu.cn</code>
+                                        </p>
+                                        <br>
+
+
+                                        <p style="font-weight: bold; font-size: 19px">Registration Fee</p>
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
@@ -833,6 +613,14 @@
                                                 <tr><th>On-Site (closed)</th><td>$250</td><td>$400</td><td>$600</td></tr>
                                             </tbody>
                                         </table>
+                                        <br>
+
+
+                                        <p style="font-weight: bold; font-size: 19px">Payment and Cancellation</p>
+                                        <p>Full payment should accompany registration forms to complete the registration. All price quotes are in Chinese RMB Yuan (CNY).</p>
+                                        <br>
+
+
                                         <p>
                                             Tutorials are included in the
                                             registration!
@@ -841,7 +629,10 @@
                                 </div>
                             </section>
                         </div>
-                        <!--<div class="accordion-group">
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Submit an abstract                          |-->
+                        <!--===========================================================================-->
+                        <div class="accordion-group">
                             <section id="abstract-submission" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">
@@ -855,17 +646,20 @@
                                             closed.-->
                                             <!-- You may -->
                                             <!-- submit your abstracts for presentations -->
-                                            <!-- (15--20 min), lightning talks (5 min) and -->
+                                            <!-- (15-20 min), lightning talks (5 min) and -->
                                             <!-- posters. -->
                                         </p>
-                                        <!-- <p> -->
-                                        <!--     <a href="http://user2016.org/abstract-submission/index.html" -->
-                                        <!--        target="_blank"><b>Submit Abstracts Here.</b></a> -->
-                                        <!-- </p> -->
-                                    <!--</div>
+                                         <p> 
+                                             <a href="http://XXXXXX.html" 
+                                                target="_blank"><b>Submit Abstracts Here.</b></a> 
+                                        </p> 
+                                    </div>
                                 </div>
                             </section>
-                        </div>-->
+                        </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Invited Speakers                            |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="invited_speakers" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -875,64 +669,75 @@
                                 </div>
                                 <div id="collapseSeven" class="accordion-body collapse in">
                                     <div class="accordion-inner">
-                                        <p>
-                                            <br />
-                                            <b><i><a href="keynotes.html">Keynote abstracts and bios are located here</a></i></b>.
-                                            <br />
-                                        </p>
-                                        <p>
-                                            The invited speakers
-                                            include <a href="http://www.research.att.com/people/Becker_Richard_A">
-                                                Richard
-                                                Becker
-                                            </a>, <a href="http://www-cs-faculty.stanford.edu/~knuth/">
-                                                Donald
-                                                Knuth
-                                            </a>, <a href="http://www.stat.berkeley.edu/~nolan">
-                                                Deborah
-                                                Nolan
-                                            </a>, <a href="http://urbanek.info/">
-                                                Simon
-                                                Urbanek
-                                            </a>, <a href="http://had.co.nz/">
-                                                Hadley
-                                                Wickham
-                                            </a>
-                                            and <a href="https://faculty.washington.edu/dwitten/">
-                                                Daniela
-                                                Witten
-                                            </a>.
-                                        </p>
-                                        <p>
-                                            <a href="http://www.research.att.com/people/Becker_Richard_A">
-                                                <img src="images/invited_speakers/Richard_Becker.png"
-                                                     alt="Richard A. Becker" style="height:140px;">
-                                            </a>
-                                            <a href="http://www-cs-faculty.stanford.edu/~knuth/">
-                                                <img src="images/invited_speakers/knuth_news.jpg"
-                                                     alt="Donald Knuth" style="height:140px;">
-                                            </a>
-                                            <a href="http://www.stat.berkeley.edu/~nolan/">
-                                                <img src="images/invited_speakers/Deborah_Nolan.jpeg"
-                                                     alt="Deborah Nolan" style="height:140px;">
-                                            </a>
-                                            <a href="http://urbanek.info">
-                                                <img src="images/invited_speakers/Simon_Urbanek.jpeg"
-                                                     alt="Simon Urbanek" style="height:140px;">
-                                            </a>
-                                            <a href="http://had.co.nz">
-                                                <img src="images/invited_speakers/Hadley_Wickham.jpg"
-                                                     alt="Hadley Wickham" style="height:140px;">
-                                            </a>
-                                            <a href="https://faculty.washington.edu/dwitten/">
-                                                <img src="images/invited_speakers/Daniela_Witten.jpeg"
-                                                     alt="Daniela M. Witten" style="height:140px;">
-                                            </a>
-                                        </p>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <img src="images/invited_speakers/expected.jpg" alt="Fa-Long Luo" style="height:100px;">
+                                                </td>
+                                                <td valign="top">
+                                                    <big><b>Fa-Long Luo (罗发龙)</b></big>
+                                                    <br>
+                                                    Chief Wireless Consultant， Micron Technologies Inc.
+                                                    <br>
+                                                    <a href="http://notfound.html">
+                                                        http://404notfound.html
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="images/invited_speakers/QingZhou.jpg" alt="Fa-Long Luo" style="height:100px;">
+                                                </td>
+                                                <td valign="top">   
+                                                    <big><b>Qing Zhou (周晴)</b></big>
+                                                    <br>
+                                                    Professor and Vice Chair, University of California at Los Angeles 
+                                                    <br>
+                                                    <a href="http://www.stat.ucla.edu/~zhou/">
+                                                        http://www.stat.ucla.edu/~zhou/
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="images/invited_speakers/Zhi-HongMao.jpg" alt="Zhi-Hong Mao" style="height:100px;">
+                                                </td>
+                                                <td valign="top">   
+                                                    <big><b>Zhi-Hong Mao (毛志宏)</b></big>
+                                                    <br>
+                                                    Associate Professor, University of Pittsburgh
+                                                    <br>
+                                                    <a href="http://www.engineering.pitt.edu/Zhi-Hong_Mao/">
+                                                        http://www.engineering.pitt.edu/Zhi-Hong_Mao/
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="images/invited_speakers/XiaodanFan.jpg" alt="Xiaodan Fan" style="height:100px;">
+                                                </td>
+                                                <td valign="top">   
+                                                    <big><b>Xiaodan Fan (樊晓丹)</b></big>
+                                                    <br>
+                                                    Associate Professor, The Chinese University of Hong Kong
+                                                    <br>
+                                                    <a href="http://www.sta.cuhk.edu.hk/xfan/default.aspx">
+                                                        http://www.sta.cuhk.edu.hk/xfan/default.aspx
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                        </table>
                                     </div>
                                 </div>
                             </section>
                         </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Schedule                                    |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="schedule" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -942,18 +747,89 @@
                                 </div>
                                 <div id="collapseSeven-A" class="accordion-body collapse in">
                                     <div class="accordion-inner">
-                                        The full conference schedule, including sessions, speakers, and attendees, is <a href="http://schedule.user2016.org/">now available here</a> in a mobile-friendly format.
-                                        <br />
-                                        <br />
-                                        Additionally, the schedule-at-a-glance is
-                                        available <a href="schedule.html">online</a>
-                                        as well as
-                                        a <a href="files/schedule.pdf">PDF</a>
-                                        document.
+                                        <table class="table table-hover">
+                                            <!--<thead>
+                                                <tr>
+                                                    <th>Event</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>-->
+                                            <tbody>
+                                                <tr>
+                                                    <h4 style="text-align: center">Morning, Oct. 15, 2016</h4>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">大会开幕，合影</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">特邀报告</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">茶歇</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">大会报告</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <h4 style="text-align: center">Afternoon, Oct. 15, 2016</h4>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">特邀报告</td>
+                                                    <td>14:00-14:50</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">大会讨论</td>
+                                                    <td>14:00-14:50</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">茶歇</td>
+                                                    <td>14:00-14:50</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">圆桌讨论</td>
+                                                    <td>14:00-14:50</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <h4 style="text-align: center">Morning, Oct. 16, 2016</h4>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">特邀报告</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">茶歇</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">大会报告</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                                <tr>
+                                                    <td width="509">闭幕式</td>
+                                                    <td>9:00-9:20</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
+
                                 </div>
                             </section>
                         </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Tutorials                                   |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="tutorials" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -1004,92 +880,16 @@
                                                     <td><a href="tutorials/07.html">MoRe than woRds, Text and Context: Language Analytics in Finance with R</a></td>
                                                     <td>Sanjiv Das</td>
                                                 </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/08.html">Time-to-Event Modeling as the Foundation of Multi-Channel Revenue Attribution</a></td>
-                                                    <td>Tess Calvez</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/09.html">Handling and Analyzing Spatial, Spatiotemporal and Movement Data</a></td>
-                                                    <td>Edzer Pebesma</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/10.html">Machine Learning Algorithmic Deep Dive</a></td>
-                                                    <td>Erin LeDell</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/11.html">Introduction to SparkR</a></td>
-                                                    <td>Shivaram Venkataraman and Hossein Falaki</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/12.html">Using R with Jupyter Notebooks for Reproducible Research</a></td>
-                                                    <td>Andrie de Vries & Micheleen Harris</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/13.html">Understanding and Creating Interactive Graphics</a></td>
-                                                    <td>Toby Dylan Hocking and Claus Thorn Ekstrom</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/14.html">Genome-Wide Association Analysis and Post-Analytic Interrogation with R</a></td>
-                                                    <td>Andrea S. Foulkes</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/15.html">An Introduction to Bayesian Inference using R Interfaces to Stan</a></td>
-                                                    <td>Ben Goodrich</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/16.html">Small Area Estimation with R</a></td>
-                                                    <td>Virgilio Gómez Rubio</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><a href="tutorials/17.html">Dynamic Documents with R Markdown</a></td>
-                                                    <td>Yihui Xie</td>
-                                                </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
                             </section>
                         </div>
-                        <div class="accordion-group">
-                            <section id="social" style="display: inline;">
-                                <div class="accordion-heading accordion-opened">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseNine">
-                                        <h3 class="accordion-h1">Social Program</h3>
-                                    </a>
-                                </div>
-                                <div id="collapseNine" class="accordion-body collapse in">
-                                    <div class="accordion-inner">
-                                        <p>
-                                            The social program includes a welcome
-                                            reception as well as a conference banquet on a
-                                            San Francisco Bay cruise. There is an
-                                            additional fee of $75 for the conference
-                                            banquet that can be purchased during
-                                            registration.
-                                        </p>
-                                        <p>
-                                            The Banquet Dinner cruise will take place
-                                            on <a href="https://www.hornblower.com/">
-                                                Hornblower
-                                                Yachts
-                                            </a> in San Francisco on Wednesday, June
-                                            29 from 5:00pm - 10:30pm. San Francisco is one
-                                            of the most beautiful cities in the world and
-                                            the cruise will sail past famed landmarks as
-                                            the sun sets and the city lights come up. The
-                                            banquet ticket includes a full buffet dinner,
-                                            boarding glass of champagne or house wine
-                                            (cash bar is available onboard for any other
-                                            drink purchases) and live DJ/music on
-                                            board. Round trip transportation to/from the
-                                            conference venue is also included.
-                                        </p>
-                                        <p>The full details are now
-                                          <a href="social.html">online</a>.</p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Location                                    |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="location" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -1099,138 +899,35 @@
                                 </div>
                                 <div id="collapseTen" class="accordion-body collapse in">
                                     <div class="accordion-inner">
-                                        <h2>Where is Stanford?</h2>
-                                        <h3>Silicon Valley</h3>
-                                        <p>Located 35 miles south of San Francisco and 20 miles north of San Jose, Stanford University is in the heart of Northern California’s dynamic "Silicon Valley,” home to Yahoo!, Google, Hewlett-Packard, and many other cutting-edge companies that were started by and continue to be led by Stanford alumni and faculty.</p>
+                                        
+                                        <h3>Tsinghua University,    FIT Building</h3>
+                                        <p>The conference will be held in FIT Building in Tsinghua campus.</p>
+                                        <p>We recommend you take a taxi from the Beijing Capital International
+                                         Airport to Tsinghua University. You can print the following map out 
+                                         and give it to the taxi driver. The driver will then know how to bring
+                                          you to Tsinghua campus or a hotel nearby. For your convenience, a pdf
+                                           version of the map can be downloaded 
+                                           <a href="xxxx.pdf" target="_blank" class="external">here</a>.
+                                        </p>
+                                        <div style="width:650px;height:350px;border:#ccc solid 1px;" id="dituContent"></div>
+                                        <!--
                                         <h3>The Bay Area</h3>
                                         <p>To the west of the <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=stanford+university&amp;ie=UTF8&amp;ll=37.430603,-122.167239&amp;spn=0.015608,0.026436&amp;t=h&amp;z=15" target="_blank" class="external">University’s 8,180-acre campus</a> are the Santa Cruz Mountains and Pacific Ocean, and to the east San Francisco Bay.&nbsp; Known as <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=stanford+university&amp;ie=UTF8&amp;ll=37.572882,-122.147369&amp;spn=0.498505,0.845947&amp;t=h&amp;z=10" target="_blank" class="external">The Peninsula</a>, the area is rich in natural beauty, culture, and entertainment.&nbsp;</p>
                                         <h3>Palo Alto</h3>
                                         <p>Although the University is virtually a community unto itself and even has its own zip code—94305—it calls the <a href="http://www.cityofpaloalto.org/" target="_blank" class="external">City of Palo Alto</a> home. Downtown Palo Alto is a short walk from campus and includes many attractions, as well as many shops and restaurants.</p>
                                         <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msa=0&amp;msid=202567232753691496610.0004ea629f20b5ae2348a&amp;ie=UTF8&amp;t=m&amp;ll=37.427468,-122.169685&amp;spn=0.016358,0.027466&amp;z=9&amp;t=p&amp;output=embed"></iframe>
-                                        <h2>Airports</h2>
-                                        <p>
-                                            Stanford is roughly equidistant from the San Francisco and San Jose airports.
-                                            <h3>Major airports</h3>
-                                        <p>
-                                            Three major airports serve the San Francisco
-                                            Bay Area,
-                                            including <a href="http://www.flysfo.com"
-                                                         target="_blank" class="external">
-                                                San Francisco
-                                                International
-                                                (SFO)
-                                            </a>, <a href="http://www.flysjc.com"
-                                                     target="_blank" class="external">
-                                                San Jose Mineta
-                                                International (SJC)
-                                            </a>,
-                                            and <a href="http://www.flyoakland.com"
-                                                   target="_blank" class="external">
-                                                Oakland
-                                                International (OAK)
-                                            </a>. We suggest comparing
-                                            fares to all three airports, as there can be
-                                            significant differences, even for the same
-                                            airline.
-                                        </p>
-                                        <h4> Choosing airports</h4>
-                                        <p>
-                                            Although San Francisco is the largest of the
-                                            three area airports and offers the most airlines
-                                            and flights, some visitors find that San Jose’s
-                                            smaller size makes it a somewhat more convenient
-                                            alternative, especially for domestic
-                                            flights.
-                                        </p>
-                                        <section id="alumni-center">
-                                            <h2>Conference Facility</h2>
-                                            <p>
-                                                The conference itself will take place in two
-                                                adjacent buildings:
-                                                <ul>
-                                                    <li>
-                                                        <a href="https://alumni.stanford.edu/get/page/resources/eventplanning/">
-                                                            Frances
-                                                            Arrillaga Alumni Center
-                                                        </a>
-                                                        at <a href="https://www.google.com/maps/place/Frances+C.+Arrillaga+Alumni+Center/@37.4309354,-122.1646608,15z/data=!4m2!3m1!1s0x0:0xf1ed37b6739708d4?sa=X&ved=0ahUKEwiR7bzU8qzKAhUG9mMKHTIOAsIQ_BIIgAEwCg">
-                                                            326 Galvez Street, Stanford, CA 94305
-                                                        </a>.
-                                                    </li>
-                                                    <li>
-                                                        <a href="http://siepr.stanford.edu">
-                                                            Stanford
-                                                            Institute for Economic Policy
-                                                            Research
-                                                        </a>
-                                                        at <a href="https://www.google.com/maps/place/Stanford+Institute+for+Economic+Policy+Research/@37.429133,-122.165061,15z/data=!4m2!3m1!1s0x0:0x6b945087b2658fca">
-                                                            366 Galvez
-                                                            Street, Stanford, CA 94305
-                                                        </a>.
-                                                    </li>
-                                                </ul>
-                                                Tutorials will use two
-                                                additional facilities,
-                                                the <a href="https://music.stanford.edu/venues/campbell">Campbell
-                                                Recital Hall</a>
-                                                at <a href="https://www.google.com/maps/place/Campbell+Recital+Hall/@37.4236469,-122.1721831,17z/data=!3m1!4b1!4m5!3m4!1s0x808fbad41a9edf8d:0x95b0b7bcaff58811!8m2!3d37.4236427!4d-122.1699891">Stanford
-                                                University, 541 Lasuen
-                                                Mall, Stanford, CA
-                                                94305</a>
-                                                and <a href="http://wallenberg.stanford.edu/about.html">Wallenberg
-                                                Hall</a>
-                                                at <a href="https://www.google.com/maps/place/Wallenberg+Hall/@37.4283295,-122.1711974,17z/data=!3m1!4b1!4m5!3m4!1s0x808fbb2a0218824f:0xc6ff87b15d5675ba!8m2!3d37.4283253!4d-122.1690034">450
-                                                Serra Mall, Stanford,
-                                                CA 94305</a>, a 10-15
-                                                minute walk from the
-                                                Alumni center.
-                                            </p>
-                                        </section>
-                                        <section id="accessibility">
-                                            <h2>Accessibility</h2>
-                                            <p>
-                                                Stanford provides wheelchair accessibility
-                                                maps and other disability access information
-                                                through
-                                                the <a href="http://maps.stanford.edu/ada/">
-                                                    Campus
-                                                    Access Guide
-                                                </a>. The appropriate
-                                                buildings are:
-                                                <ul>
-                                                    <li>
-                                                        <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=08-450">FRANCES C. ARRILLAGA ALUMNI CENTER, 08-450</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=08-280">GUNN BUILDING (SIEPR), 08-280</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=02-210">Campbell
-                                                        Recital
-                                                        Hall,
-                                                        02-210</a>. (See
-                                                        also <a href="https://music.stanford.edu/venues/campbell/accessibility">Campbell
-                                                        specific information</a>.)
-                                                    </li>
-                                                    <li>
-                                                        <a href="http://maps.stanford.edu/ada/building-ada.cfm?FACIL_ID=01-160">Wallenberg
-                                                        Hall, 01-160</a>
-                                                    </li>
-                                                </ul>
-                                            </p>
-                                            <p>
-                                                If you have any special needs or questions
-                                                about accessibility, we request that such
-                                                information be noted during online
-                                                registration. You may also contact Stanford
-                                                Conferences at
-                                                <code>meetingplanning@stanford.edu</code>.
-                                            </p>
-                                        </section>
+
+                                        -->
+
+                                   
+                                        
                                     </div>
                                 </div>
                             </section>
                         </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Lodging                                     |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="lodging" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -1240,381 +937,42 @@
                                 </div>
                                 <div id="collapseEleven" class="accordion-body collapse in">
                                     <div class="accordion-inner">
-                                        <p>
-                                            Please note that the Bay
-                                            Area lodging costs have
-                                            skyrocketed in recent
-                                            years. There's also a
-                                            limited supply so we urge
-                                            you to make use of the
-                                            options below as soon as
-                                            possible.
-                                            <em>
-                                                Since the
-                                                registration for the
-                                                conference is independent
-                                                of lodging, you can book
-                                                the rooms at any time.
-                                            </em> However, we
-                                            advise that you always check the
-                                            cancellation policy.
+                                        <p class="body_text">
+                                            The following hotels with reasonable tariff ranged from 
+                                            RMB360-350 per night could be booked via 
+                                            <a href="http://www.XXXX.net" target="_blank">www.XXXX.net </a>
                                         </p>
 
                                         <p>
-                                            Taxes are not included in
-                                            the room rates quoted
-                                            below. For your calculations,
-                                            please assume an occupancy tax
-                                            of 14% and a California
-                                            tourism tax of 0.20% per room.
-                                            A convention and visitors
-                                            bureau tourism fee of $0.84
-                                            will be also be charged per
-                                            room night. This is the best
-                                            information we have at the
-                                            moment and these rates are
-                                            subject to change without
-                                            notice.
+                                            <span class="body_text_bold">Hejia Inn North 4th Ring - Beijing</span>
+                                            <code>(30 minutes walking distance to conference venue)</code>
+                                            <br>
+                                            <span class="body_text">22 Huaqing Jiayuan, Chengfu Road, Haidian District</span>
                                         </p>
-                                        <dl>
-                                            <dt>Campus Dormitory Housing</dt>
-                                            <dd>
-                                                <p>
-                                                    Stanford has made a limited number of
-                                                    on-campus
-                                                    dormitories
-                                                    available for
-                                                    attendees.
-                                                    A five-night package
-                                                    for <a href="http://user2016.org">
-                                                        useR!
-                                                        2016
-                                                    </a> attendees
-                                                    and an eight-night
-                                                    package for both
-                                                    <a href="http://user2016.org">
-                                                        useR! 2016
-                                                    </a> and
-                                                    <a href="https://www.bioconductor.org/help/course-materials/2016/BioC2016/"
-                                                       target="_blank">Bioconductor 2016</a>
-                                                    attendees
-                                                    are available
-                                                    (details on booking
-                                                    page).
-                                                    <a href="https://app.certain.com/profile/form/index.cfm?PKformID=0x2274909e68f">
-                                                        Full now.
-                                                    </a>
-                                                </p>
-                                            </dd>
-                                            <dt><a href="http://www.cardinalhotel.com/">Cardinal Hotel</a></dt>
-                                            <dd>
-                                                <p>
-                                                    A block of rooms has been reserved from
-                                                    Sunday, June 26th to Friday, July 1st at
-                                                    this hotel located approximately 1 mile from the
-                                                    conference venue.  Pricing ranges from $149 + tax for a
-                                                    room with shared bath down the hall, to
-                                                    $269-$289 + tax for rooms with ensuite
-                                                    bath. To reserve, please
-                                                    use <a href="https://res.windsurfercrs.com/bbe/page2.aspx?pcode=GEM_581&propertyid=14212&nights=1&checkin=06/26/2016&group=UseR2016">
-                                                        this
-                                                        group booking link.
-                                                    </a>
-                                                </p>
-                                                <p>
-                                                    <a href="https://www.google.com/maps/dir/Cardinal+Hotel,+235+Hamilton+Ave,+Palo+Alto,+CA+94301/Arrillaga+Alumni+Center,+Galvez+Street,+Stanford,+CA/@37.4376497,-122.169766,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fbb3a2f5c4cb1:0xad703eef5fd5c8b9!2m2!1d-122.161131!2d37.444474!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                        Map
-                                                        of Directions to Conference Venue
-                                                    </a>
-                                                </p>
-                                            </dd>
-                                            <dt><a href="https://rde.stanford.edu/hospitality/stanford-guest-house">Stanford Guest House</a> (SLAC Campus)</dt>
-                                            <dd>
-                                                <p>
-                                                    <em>
-                                                        Full as of March
-                                                        8, 2016.
-                                                    </em>
+                                        
+                                        <p class="body_text">
+                                            <span class="body_text_bold">Greentree Inn Xueyuan Road - Beijing</span> 
+                                            <code>(30 minutes walking distance to conference venue)</code>
+                                            <br>
+                                            Zhanchunyuan Road, Haidian District
+                                        </p>
 
-                                                <p>
-                                                    The Stanford Guest House is located on
-                                                    SLAC campus. Stanford’s complimentary
-                                                    <a href="https://transportation.stanford.edu/marguerite/">
-                                                        Marguerite
-                                                        shuttle system
-                                                    </a> operates between SLAC (with
-                                                    a stop at the entrance to the Guest House) and
-                                                    the Stanford campus, and is available on
-                                                    weekdays from 7:30 a.m. to 8:00 p.m.,
-                                                    approximately every 20 minutes.
-                                                </p>
-                                                <p>
-                                                    <a href="https://www.google.com/maps/dir/stanford+guest+house/Arrillaga+Alumni+Center,+Galvez+Street,+Stanford,+CA/@37.4331508,-122.1989463,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fa4e291132c0d:0x7c8247d8885e6efd!2m2!1d-122.2021949!2d37.4200401!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                        Map
-                                                        of Directions to Conference Venue
-                                                    </a>
-                                                </p>
-                                            </dd>
-                                            <dt><a href="https://www.starwoodmeeting.com/events/start.action?id=1512119551&key=38393746">Palo Alto Sheraton</a></dt>
-                                            <dd>
-                                                <p>
-                                                    A block of rooms has been reserved from
-                                                    Sunday, June 26th to Friday, July 1st. The
-                                                    price per night is $299/night + tax. To
-                                                    book, call the hotel directly at
-                                                    1-800-325-3535 and reference the group
-                                                    name: "user 2016 conference" to receive
-                                                    the group rate. <a href="https://www.starwoodmeeting.com/events/start.action?id=1512119551&key=38393746">The link above</a> takes you
-                                                    to a page created specially for the
-                                                    conference. To guarantee a reservation,
-                                                    one must give a credit card number and
-                                                    expiration date. The group rate is valid
-                                                    until June 5th.
-                                                </p>
-                                                <p><a href="https://www.google.com/maps/dir/Sheraton+Palo+Alto,+625+El+Camino+Real,+Palo+Alto,+CA+94301/Arrillaga+Alumni+Center,+Galvez+Street,+Stanford,+CA/@37.4378077,-122.1745773,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fbb307f6fef21:0xf7bdf2ddf43b6d2f!2m2!1d-122.1635009!2d37.4414816!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">Map of Directions to Conference Venue</a></p>
-                                            </dd>
-                                            <dt><a href="http://hiltongardeninn3.hilton.com/en/hotels/california/hilton-garden-inn-palo-alto-PAOCRGI/index.html">Palo Alto Hilton Garden Inn</a></dt>
-                                            <dd>
-                                                <p>
-                                                    Guestrooms have been reserved from
-                                                    Sunday, June 26th to Friday, July 1st for
-                                                    a rate of $249/night + tax. Online booking
-                                                    instructions: Go to the website and toward
-                                                    the top right, enter the dates and right
-                                                    below hit "more options", then select add
-                                                    "special rate codes". Then enter group
-                                                    code STA626 and proceed by hitting "check
-                                                    rooms and rates".
-                                                </p>
-                                                <p>
-                                                    To make a phone reservation, please call
-                                                    the hotel directly at 650-843-0795 and
-                                                    reference "Stanford University- User 2016
-                                                    Conference Group" to receive the group
-                                                    rate. The hotel is approximately 3 miles from
-                                                    Stanford Campus and a car or public
-                                                    transportation will be required to get
-                                                    between the hotel and the conference
-                                                    venue. Space is limited and reservations
-                                                    at this group rate will be accepted until
-                                                    June 5th.
-                                                </p>
-                                                <p>
-                                                    <a href="https://www.google.com/maps/dir/Hilton+Garden+Inn+Palo+Alto,+4216+El+Camino+Real,+Palo+Alto,+CA+94306/Arrillaga+Alumni+Center,+Galvez+Street,+Stanford,+CA/@37.4220353,-122.1765632,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fba7b8ce7023b:0x42ba397b8237ab26!2m2!1d-122.1230046!2d37.4095951!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                        Map
-                                                        of Directions to Conference Venue
-                                                    </a>
-                                                </p>
-                                            </dd>
-                                            <dt><a href="http://www.creekside-inn.com/">Creekside Inn</a></dt>
-                                            <dd>
-                                                <p>
-                                                    A block of 30 rooms has been reserved at the Creekside Inn for Sunday,
-                                                    June 26 to Friday, July 1. The price per night is $199 + taxes.
-                                                    To reserve, please use
-                                                    <a href="https://gc.synxis.com/rez.aspx?Hotel=17137&Chain=6158&rate=USER!">
-                                                        this group booking
-                                                        link
-                                                    </a>, or call the
-                                                    hotel directly at
-                                                    1-800-492-7335 and ask
-                                                    for in-house
-                                                    reservations. You'll need to reference the group name: "User 2016" to receive the group rate. Just two miles away from Stanford University, the Creekside Inn offers a complimentary car service to Stanford upon request. The group rate is valid until May 23.
-                                                </p>
-                                                <p>
-                                                    <a href="https://www.google.com/maps/dir/3400+El+Camino+Real,+Palo+Alto,+CA+94306/Arrillaga+Alumni+Center,+Galvez+Street,+Stanford,+CA/@37.4314093,-122.1599795,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fbaf3519eea05:0xf5488cc696025aaf!2m2!1d-122.1354118!2d37.4193072!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                        Map
-                                                        of Directions to Conference Venue
-                                                    </a>
-                                                </p>
-                                            </dd>
-                                            <dt>
-                                                <a href="http://www.mapletreeinn.com/">
-                                                    Maple
-                                                    Tree Inn, Sunnyvale
-                                                </a>
-                                            </dt>
-                                            <dd>
-                                                <p>
-                                                    A block of rooms are reserved for the
-                                                    group rate of $179/night + tax from
-                                                    Sunday, June 26th to Friday, July
-                                                    1st. Book online via the website and enter
-                                                    group code 841 to receive the group
-                                                    rate.
-                                                </p>
-                                                <p>
-                                                    Maple Tree Inn is located 12 miles south
-                                                    of Stanford, between Highway 101 and
-                                                    Interstate 280.
-                                                </p>
-                                                <p>
-                                                    <a href="https://www.google.com/maps/dir/maple+tree+inn+sunnyvale/Arrillaga+Alumni+Center,+Galvez+Street,+Stanford,+CA/@37.4047118,-122.1584091,12z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fb67680c0d0c5:0xf53f55dd72b35f4e!2m2!1d-122.0215473!2d37.3598494!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                        Map
-                                                        of Directions to Conference Venue
-                                                    </a>
-                                                </p>
-                                            </dd>
-                                            <dt><a href="http://www.theredwoodcityhotel.com/">The Atherton Park Inn and Suites</a></dt>
-                                            <dd>
-                                                <p>
-                                                    Located a few miles north of Stanford,
-                                                    this hotel offers government rates based
-                                                    on availability. Online reservations can
-                                                    be made via the website.
-                                                </p>
-                                                <p>
-                                                    <a href="https://www.google.com/maps/dir/atherton+park+inn+and+suites/Arrillaga+Alumni+Center,+Galvez+Street,+Stanford,+CA/@37.4506491,-122.2222589,13z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fa3730b2e7b29:0x2a8d7afb224f17c5!2m2!1d-122.2135114!2d37.4698058!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                        Map
-                                                        of Directions to Conference Venue
-                                                    </a>
-                                                </p>
-                                            </dd>
-                                            <dt>
-                                                Additional Lodging
-                                                Suggestions
-                                            </dt>
-                                            We don't have any
-                                            arrangements with the
-                                            hotels listed below. So
-                                            we suggest you call them
-                                            directly and ask for
-                                            further discounts.
-                                            <dd>
-                                                <ul>
-                                                    <li>
-                                                        <p>
-                                                            <a href="http://www.coronetmotel.net">
-                                                                Coronet
-                                                                Motel
-                                                            </a> is close to
-                                                            campus with
-                                                            rates as low as
-                                                            $176/night.
-                                                        </p>
-                                                        <p>
-                                                            <a href="https://www.google.com/maps/dir/2455+El+Camino+Real,+Palo+Alto,+CA+94306/Frances+C.+Arrillaga+Alumni+Center,+Arrillaga+Alumni+Center,+326+Galvez+St,+Stanford,+CA+94305/@37.4282729,-122.163566,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fbaef42d6e141:0xd22820d715515f19!2m2!1d-122.1449617!2d37.4250172!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                                Map of
-                                                                directions to
-                                                                Conference Venue
-                                                            </a>
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p>
-                                                            <a href="http://www.redcottageinn.com">
-                                                                Red
-                                                                Cottage Inn
-                                                            </a>
-                                                            has rooms with
-                                                            21-day advance
-                                                            purchase for about
-                                                            $201.45/night.
-                                                        </p>
-                                                        <p>
-                                                            <a href="https://www.google.com/maps/dir/1704+El+Camino+Real,+Menlo+Park,+CA+94027/Frances+C.+Arrillaga+Alumni+Center,+Arrillaga+Alumni+Center,+326+Galvez+St,+Stanford,+CA+94305/@37.449087,-122.1966477,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x808fa35f596d5da9:0xd1189017d79ff876!2m2!1d-122.1925718!2d37.4593467!1m5!1m1!1s0x808fbb28416493a7:0xf1ed37b6739708d4!2m2!1d-122.1646608!2d37.4309354">
-                                                                Map of
-                                                                directions to
-                                                                Conference Venue
-                                                            </a>
-                                                        </p>
-                                                    </li>
-
-
-                                                    <li>
-                                                        <a href="http://visit.stanford.edu/plan/lodging.html">
-                                                            Visit
-                                                            Stanford
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.airbnb.com/Palo-Alto--CA">
-                                                            Airbnb
-                                                            Palo Alto
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </dd>
-                                        </dl>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-
-                        <div class="accordion-group">
-                            <section id="satellite" style="display: inline;">
-                                <div class="accordion-heading accordion-opened">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwelve">
-                                        <h3 class="accordion-h1">Bioconductor Conference</h3>
-                                    </a>
-                                </div>
-                                <div id="collapseTwelve" class="accordion-body collapse in">
-                                    <div class="accordion-inner">
                                         <p>
-                                            The Bioconductor 2016 conference will also
-                                            be held at Stanford June 24--26 just prior
-                                            to the useR! 2016 conference. This offers
-                                            useRs an opportunity to attend both
-                                            conferences at the same location
-                                            seamlessly. Please consult the
-                                            <a href="https://www.bioconductor.org/help/course-materials/2016/BioC2016/"
-                                               target="_blank">BioC 2016</a> site for more
-                                            details.
+                                            <span class="body_text_bold">Lantinghui Hotel - Beijing</span>
+                                            <span class="body_text">
+                                                <code>(30 minutes walking distance to conference venue)</code>                                                
+                                                <br>
+                                                No.35 Chengfu Road, Haidian District
+                                            </span>
+                                            <br>
                                         </p>
                                     </div>
                                 </div>
                             </section>
                         </div>
-
-                        <div class="accordion-group">
-                            <section id="asa-grant" style="display: inline;">
-                                <div class="accordion-heading accordion-opened">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwelve-A">
-                                        <h3 class="accordion-h1">ASA Grants</h3>
-                                    </a>
-                                </div>
-                                <div id="collapseTwelve-A" class="accordion-body collapse in">
-                                    <div class="accordion-inner">
-                                        <p>
-                                            <a href="http://www.amstat.org">
-                                                The
-                                                American Statistical
-                                                Association
-                                            </a> will offer two grants of $1250 each for young
-                                            researchers/students.
-                                            Applicants were first asked to
-                                            submit an
-                                            abstract for a conference talk
-                                            (preferred) or a lightning
-                                            talk using the usual abstract
-                                            submission process and then
-                                            provide a resume
-                                            along with an
-                                            extended abstract (up to 6
-                                            pages). But now that abstract
-                                            submission has closed,
-                                            applications with
-                                            two PDF attachments (named
-                                            <code>resume.pdf</code>
-                                            and <code>abstract.pdf</code> respectively)
-                                            emailed before
-                                            <strike>March 31</strike>
-                                            April 4, 2016 to <code>user2016-asagrant</code>
-                                            AT <code>stat.stanford.edu</code>
-                                            with the subject <b>
-                                                ASA
-                                                grant Application
-                                            </b>
-                                            will still be considered on their individual merits by the
-                                            scientific
-                                            committee. (Recipients may be
-                                            be required to present a
-                                            talk.)
-                                        </p>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Code of Conduct                             |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="behavioR" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -1626,7 +984,7 @@
                                     <div class="accordion-inner">
                                         <p>
                                             All attendees, speakers, sponsors and
-                                            volunteers at useR! 2016 are required to agree
+                                            volunteers at SIIP 2016 are required to agree
                                             to the following code of conduct. Organizers
                                             will enforce this code throughout and expect
                                             cooperation in ensuring a safe environment for
@@ -1634,22 +992,22 @@
                                         </p>
                                         <h3>The Short Version</h3>
                                         <p>
-                                            The organizers of useR! 2016 and Stanford
+                                            The organizers of SIIP 2016 and Tsinghua
                                             University are dedicated to providing a
                                             harassment-free conference experience for
                                             everyone regardless of gender, gender
                                             expression, sexual orientation, disability,
                                             physical appearance, body size, race, or
                                             religion (or lack thereof). We do not tolerate
-                                            harassment of useR! 2016 participants in any
+                                            harassment of SIIP 2016 participants in any
                                             form. Sexual language and imagery is not
                                             appropriate for any conference venue,
                                             including talks, workshops, conference events,
-                                            Twitter and other online media. useR! 2016
+                                            Twitter and other online media. SIIP 2016
                                             participants violating these rules may be
                                             sanctioned or expelled from the
                                             conference <em>without a refund</em> at the
-                                            discretion of the useR!  2016 organizers.
+                                            discretion of the SIIP  2016 organizers.
                                         </p>
                                         <h3>The Long Version</h3>
                                         <p>
@@ -1690,17 +1048,17 @@
                                             If you are being harassed, notice that
                                             someone else is being harassed, or have any
                                             other concerns, please contact a member of
-                                            useR!  2016 staff immediately. useR! 2016
+                                            SIIP  2016 staff immediately. SIIP 2016
                                             staff can be readily identified as they will
-                                            be wearing distinctively colored useR! 2016
+                                            be wearing distinctively colored SIIP 2016
                                             t-shirts.
                                         </p>
                                         <p>
-                                            useR! 2016 staff will be happy to help
+                                            SIIP 2016 staff will be happy to help
                                             participants contact hotel/venue security or
                                             local law enforcement, provide escorts, or
                                             otherwise assist those experiencing harassment
-                                            to feel safe for the duration of useR!
+                                            to feel safe for the duration of SIIP
                                             2016. We value your attendance.
                                         </p>
                                         <p>
@@ -1715,6 +1073,9 @@
                                 </div>
                             </section>
                         </div>
+                        <!--===========================================================================-->
+                        <!--|                    可隐藏框: Conference Flyer                            |-->
+                        <!--===========================================================================-->
                         <div class="accordion-group">
                             <section id="flyer" style="display: inline;">
                                 <div class="accordion-heading accordion-opened">
@@ -1726,7 +1087,7 @@
                                     <div class="accordion-inner">
                                         <p>
                                             The Conference Flyer is
-                                            available as a <a href="http://user2016.org/files/useR-2016-flyer.pdf">pdf document</a>
+                                            available as a <a href="http://xxxx.pdf">pdf document</a>
                                     </div>
                                 </div>
                             </section>
@@ -1737,7 +1098,8 @@
             </div>
         </div>
     </div>
-    <div id="emptyness"></div><!-- twitter modal -->
+    <!-- deprecated
+    <div id="emptyness"></div>
     <div class="modal fade hide" id="twittermodal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1745,6 +1107,7 @@
             </div>
         </div>
     </div>
+    -->
     </div>
 
     <div id="footer">
@@ -1760,6 +1123,7 @@
     <script src="jquery/jquery-1.10.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="user.js"></script>
+    <!--
     <script>
         !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + "://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
     </script>
@@ -1776,6 +1140,8 @@
         ga('send', 'pageview');
 
     </script>
+    -->
+
     <script type="text/javascript">
         var hasLoaded = false;
         $(window).bind('load', function () {
@@ -1787,6 +1153,103 @@
                 $(".accordion-body").css("height", "0px");
             }
         });
+    </script>
+    <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(116.339393,40.002366);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:0});
+    map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+    map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"FIT&nbsp;Building",content:"我的备注",point:"116.337965|40.002725",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+         ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+            
+            (function(){
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click",function(){
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open",function(){
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close",function(){
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click",function(){
+                    _marker.openInfoWindow(_iw);
+                })
+                if(!!json.isOpen){
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
     </script>
 </body>
 </html>
